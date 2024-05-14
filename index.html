@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <div class="main-container">
+        <img src="./assets/logo-qr-generator.svg" class="logo">
+        <form class="search-bar" onsubmit="return false;">
+            <input type="text" placeholder="Enter an url" id="form-data">
+            <button id="submit-btn">QR code</button>
+        </form>
+    </div>
+
+    <div class="qr-page">
+        <img src="./assets/logo-qr-generator.svg" class="logo-sm">
+        <div class="qr-main">
+
+            <div class="qr-container">
+                <div class="qr-img">
+                    <div class="qr-code"></div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button class="primary-btn">Download <img src="./assets/Load_circle_duotone.svg"></button>
+                <button class="primary-btn">Share <img src="./assets/link_alt.svg"></button>
+            </div>
+        </div>
+    </div>
+
+    <img src="./assets/bg-illustration.svg" class="bg-img">
+    
+</body>
+<script src="index.js"></script>
+</html>

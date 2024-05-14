@@ -1,0 +1,111 @@
+*
+    margin: 0
+    padding: 0
+
+body
+    display: flex
+    justify-content: center
+    background-color: #111729
+    position: relative
+    font-family: "Outfit", sans-serif
+
+.bg-img
+    position: absolute
+    right: 50px
+    top: 100px
+    z-index: -10
+
+.main-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 240px 
+    &.deactive
+        display: none
+
+.search-bar
+    margin-top: 32px
+    width: 609px
+    background-color: #030616
+    border: solid 2px #3662E3
+    border-radius: 20px
+    padding: 8px 0 8px 32px
+    display: flex
+    justify-content: space-around
+    input
+        background: none
+        border: none
+        width: 70%
+        color: #364153
+        font-size: 1rem
+        &::placeholder
+            color: #364153
+            font-size: 1rem
+        &:focus
+            outline: none
+    button
+        padding: 16px 40px 16px 40px
+        background-color: #3662E3
+        border: none
+        border-radius: 12px
+        cursor: pointer
+        color: #F2F5F9
+
+.logo
+    width: 189px
+
+.qr-page
+    width: 90%
+    height: 100%
+    padding-top: 40px
+    display: none
+    &.active
+        display: flex
+        flex-direction: column
+    .qr-main
+        padding-top: 96px
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+.qr-container
+    width: 307px
+    height: 307px
+    position: relative
+    background-color: rgba(78, 128, 238, 0.2)
+    border-radius: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    .qr-img
+        width: 242.37px
+        height: 242.37px
+        background-color: #F2F5F9
+        border-radius: 24px
+        display: flex
+        justify-content: center
+        align-items: center
+       
+.btn-container
+    margin-top: 64px
+    display: inline-flex
+    flex-wrap: wrap
+    gap: 32px
+
+.primary-btn
+    background-color: #3662E3
+    padding: 16px 40px 16px 40px
+    border: none
+    border-radius: 12px
+    outline: none
+    color: #F2F5F9
+    font-size: 1rem
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+
+.logo-sm
+    width: 112px
