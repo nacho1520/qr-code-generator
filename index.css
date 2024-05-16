@@ -38,6 +38,9 @@ body {
   display: flex;
   justify-content: space-around;
 }
+.search-bar.warn {
+  border: solid 2px #ef233c;
+}
 .search-bar input {
   background: none;
   border: none;
@@ -131,4 +134,15 @@ body {
 
 .logo-sm {
   width: 112px;
+}
+
+.warning {
+  display: none;
+  margin-top: 10px;
+  color: #ef233c;
+  align-self: flex-start;
+  font-size: 1rem;
+}
+.warning.active {
+  display: block;
 }/*# sourceMappingURL=index.css.map */

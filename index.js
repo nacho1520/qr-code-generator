@@ -4,6 +4,8 @@ window.addEventListener('load', () => {
     const qrPage = document.querySelector('.qr-page');
     const downloadBtn = document.querySelector('#download-btn');
     const shareBtn = document.querySelector('#share-btn');
+    const searchBar = document.querySelector('.search-bar');
+    const warning = document.querySelector('.warning');
 
     const generateQrCode = (url) => {
         const qrCode = new QRCode(document.querySelector('.qr-code'), {
@@ -13,11 +15,17 @@ window.addEventListener('load', () => {
         });
     };
 
-    submitBtn.addEventListener('click', () => {
-        mainPage.classList.add('deactive');
+    submitBtn.addEventListener('click', () => { 
         const url = document.querySelector('#form-data').value;
-        generateQrCode(url);
-        qrPage.classList.add('active');
+        if(!url) {
+            warning.classList.add('active');
+            searchBar.classList.add('warn');
+        }
+        else {
+            mainPage.classList.add('deactive');
+            generateQrCode(url);
+            qrPage.classList.add('active');
+        }
     });
 
     downloadBtn.addEventListener('click', () => {
@@ -41,6 +49,12 @@ window.addEventListener('load', () => {
                 ])
             )
         );
+    });
+
+    document.querySelector('#form-data').addEventListener("focus", () => {
+        console.log('hola');
+        searchBar.classList.remove('warn');
+        warning.classList.remove('active');
     });
     
 });

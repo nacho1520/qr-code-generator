@@ -32,6 +32,8 @@ body
     padding: 8px 0 8px 32px
     display: flex
     justify-content: space-around
+    &.warn
+        border: solid 2px #ef233c
     input
         background: none
         border: none
@@ -109,3 +111,12 @@ body
 
 .logo-sm
     width: 112px
+
+.warning
+    display: none
+    margin-top: 10px
+    color: #ef233c
+    align-self: flex-start
+    font-size: 1rem
+    &.active
+        display: block
