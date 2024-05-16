@@ -3,6 +3,7 @@ window.addEventListener('load', () => {
     const submitBtn = document.querySelector('#submit-btn');
     const qrPage = document.querySelector('.qr-page');
     const downloadBtn = document.querySelector('#download-btn');
+    const shareBtn = document.querySelector('#share-btn');
 
     const generateQrCode = (url) => {
         const qrCode = new QRCode(document.querySelector('.qr-code'), {
@@ -29,6 +30,17 @@ window.addEventListener('load', () => {
             anchor.click();
             anchor.remove();
         });
+    });
+
+    shareBtn.addEventListener('click', () => {
+        const qrImage = document.querySelector('.qr-img');
+        html2canvas(qrImage).then((canvas) => 
+            canvas.toBlob(blob => 
+                navigator.clipboard.write([
+                    new ClipboardItem({'image/png': blob})
+                ])
+            )
+        );
     });
     
 });
