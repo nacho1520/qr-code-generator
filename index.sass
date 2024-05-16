@@ -8,10 +8,12 @@ body
     background-color: #111729
     position: relative
     font-family: "Outfit", sans-serif
+    overflow: hidden
 
 .bg-img
     position: absolute
-    right: 50px
+    // right: 50px
+    right: -40%
     top: 100px
     z-index: -10
 
@@ -20,12 +22,13 @@ body
     flex-direction: column
     align-items: center
     padding-top: 240px 
+    width: 100%
     &.deactive
         display: none
 
 .search-bar
     margin-top: 32px
-    width: 609px
+    width: 90%
     background-color: #030616
     border: solid 2px #3662E3
     border-radius: 20px
@@ -108,6 +111,12 @@ body
     justify-content: center
     align-items: center
     cursor: pointer
+    transition: all 0.2s 
+    &:hover
+       background-color: #0077b6 
+    &:active
+        position: relative
+        top: 1px
 
 .logo-sm
     width: 112px
@@ -120,3 +129,10 @@ body
     font-size: 1rem
     &.active
         display: block
+
+@media (min-width: 768px) 
+    .search-bar
+        width: 609px
+
+    .bg-img
+         right: 50px

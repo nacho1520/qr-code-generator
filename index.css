@@ -9,11 +9,12 @@ body {
   background-color: #111729;
   position: relative;
   font-family: "Outfit", sans-serif;
+  overflow: hidden;
 }
 
 .bg-img {
   position: absolute;
-  right: 50px;
+  right: -40%;
   top: 100px;
   z-index: -10;
 }
@@ -23,6 +24,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 240px;
+  width: 100%;
 }
 .main-container.deactive {
   display: none;
@@ -30,7 +32,7 @@ body {
 
 .search-bar {
   margin-top: 32px;
-  width: 609px;
+  width: 90%;
   background-color: #030616;
   border: solid 2px #3662E3;
   border-radius: 20px;
@@ -130,6 +132,14 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.2s;
+}
+.primary-btn:hover {
+  background-color: #0077b6;
+}
+.primary-btn:active {
+  position: relative;
+  top: 1px;
 }
 
 .logo-sm {
@@ -145,4 +155,13 @@ body {
 }
 .warning.active {
   display: block;
+}
+
+@media (min-width: 768px) {
+  .search-bar {
+    width: 609px;
+  }
+  .bg-img {
+    right: 50px;
+  }
 }/*# sourceMappingURL=index.css.map */
