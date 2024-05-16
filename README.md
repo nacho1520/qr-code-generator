@@ -14,5 +14,5 @@ Fetching data from https://api.quotable.io/random API   This is a challenge for 
 * [QRCode.js](https://github.com/davidshimjs/qrcodejs?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library)
 * [html2canvas](https://html2canvas.hertzen.com/?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library)
 
-![Screenshot1](https://github.com/nacho1520/random-quotes/blob/main/public/shot.png)
-![Screenshot2](https://github.com/nacho1520/random-quotes/blob/main/public/shot.png)
+![Screenshot1](https://github.com/nacho1520/qr-code-generator/blob/main/public/shot1.png)
+![Screenshot2](https://github.com/nacho1520/qr-code-generator/blob/main/public/shot2.png)
