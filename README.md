@@ -4,8 +4,6 @@ QR Code generator page made with HTML, SASS and Vanilla JavaScript.
 
 User can generate a new qr code after entering a URL. The user is able to download the qr code as image and copy the image to the clipboard. 
 
-Fetching data from https://api.quotable.io/random API   This is a challenge for [devChallenges](https://devchallenges.io/)
-
 ## Technologies:
 
 * HTML
